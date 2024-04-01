@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100%;
+  width: 100%;
+  background: #eaeaea;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#contenedor {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  color: #848484;
+  text-align: center;
+}
+
+button {
+  border: none;
+  background: #2553df;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 20px;
+}
+
+button:hover {
+  background: #1942be;
+}
+img {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 25%;
+}
+input {
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 20px;
+}
+#img-pistas {
+  width: 60px;
+  height: 60px;
+}
+.cambiarModo {
+  background: #eaeaea;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-right: auto;
+}
+.cambiarModo img {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  z-index: 1;
+  top: -21px;
+  left: -26px;
+}
+.cambiarModo img:hover {
+  box-shadow: 5px 0px 10px rgba(255, 255, 255, 0.5),
+    5px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.modoOscuro {
+  background: #000003;
+  color: #eaeaea;
+}
