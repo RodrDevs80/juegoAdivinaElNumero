@@ -43,14 +43,14 @@ const adivinarNumero = (numeroElegido, numeroSecreto) => {
         setTimeout(function () { window.location.reload(true) }, 8000);
     } else if (numeroElegido < numeroSecreto) {
         pistas.textContent = 'El numero elegido es MENOR que el numero secreto';
-        imgPistas.setAttribute('src', '/Ejercicio145/img/arriba.png');
+        imgPistas.setAttribute('src', './img/arriba.png');
         labelNumero.textContent = 'Ingresa otro numero!';
         numeroDeIntentos--;
         mostrarIntentos.textContent = `Te quedan ${numeroDeIntentos} intentos!!!`;
 
     } else {
         pistas.textContent = 'El numero elegido es MAYOR que el numero secreto';
-        imgPistas.setAttribute('src', '/Ejercicio145/img/abajo.png');
+        imgPistas.setAttribute('src', './img/abajo.png');
         labelNumero.textContent = 'Ingresa otro numero!';
         numeroDeIntentos--;
         mostrarIntentos.textContent = `Te quedan ${numeroDeIntentos} intentos!!!`;
@@ -77,7 +77,7 @@ btnJugar.addEventListener('click', (e) => {
 btnCambiarModo.addEventListener('click', (e) => {
     if (!cuerpo.classList.contains('modoOscuro')) {
         cuerpo.setAttribute('class', 'modoOscuro');
-        imgCambiarModo.setAttribute('src', '/Ejercicio145/img/sol.jpg');
+        imgCambiarModo.setAttribute('src', './img/sol.jpg');
 
     } else {
         cuerpo.removeAttribute('class', 'modoOscuro');
